@@ -1,0 +1,8 @@
+In this updated version, we added Firebase initialization and created a Firestore instance using firebase.firestore(). We also added a useEffect hook to fetch the top 100 users from Firebase Firestore and update the users state.
+
+Assuming you have a collection named "users" in your Firestore database, you can modify the code inside fetchTopUsers to query the users collection and retrieve the necessary fields like username and profileImage. Make sure to replace usersRef with the correct reference to your "users" collection.
+
+The users.map function is used to render each user in the ordered list. It displays the profile image using the img tag, with the src attribute set to the profileImage URL. The alt attribute is set to the username for accessibility purposes. The width and height attributes are set to 45 pixels as requested.
+
+Remember to replace the firebaseConfig object with your actual Firebase configuration.
+
